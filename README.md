@@ -9,6 +9,7 @@ Handling function have to initial before `useOutsideClick` hook.
 
 ```
 import React from 'react';
+import useOutsideClick from 'reactjs-outside-click';
 
 const HelloWorld = () => {
     const elementRef = useRef(null);
