@@ -1,0 +1,64 @@
+{
+    "name": "reactjs-outside-click",
+    "version": "1.0.0",
+    "description": "A React hook for dealing with clicks outside",
+    "keywords": [
+        "outside click",
+        "hook",
+        "useOutsideClick",
+        "react",
+        "reactjs-outside-click"
+    ],
+    "author": "Nguyen Van Nghi <nghiweb@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nguyenvannghi/reactjs-outside-click.git"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "husky": "^4.2.3",
+        "lint-staged": "^10.0.8",
+        "prettier": "^1.19.1",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0",
+        "react-scripts": "3.4.0"
+    },
+    "peerDependencies": {
+        "react-dom": "^16.13.0",
+        "react-scripts": "3.4.0"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "prettier": {
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": true,
+        "tabWidth": 4,
+        "printWidth": 140
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx,json,scss,md}": [
+            "prettier --write",
+            "git add"
+        ]
+    }
+}
